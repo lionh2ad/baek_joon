@@ -1,4 +1,4 @@
-#include"01_compare_A_B.c.h"
+#include"01_compare_A_B.h"
 
 int main(void) {
 	int A = 0, B = 0;
