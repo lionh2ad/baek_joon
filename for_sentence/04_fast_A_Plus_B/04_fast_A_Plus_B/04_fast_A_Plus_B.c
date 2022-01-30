@@ -4,7 +4,7 @@ int main(void) {
 	int T = 0, A = 0, B = 0, count =0;
 	while (1) {
 		scanf("%d", &T);
-		if (0<T && T<1000000) {
+		if (0<T && T<=1000000) {
 			break;
 		}
 	}
@@ -17,8 +17,7 @@ int main(void) {
 				}
 			}
 		}
-		printf("%d", A+B);
+		printf("%d \n", A+B);
 	}
-
 	return 0;
 }
