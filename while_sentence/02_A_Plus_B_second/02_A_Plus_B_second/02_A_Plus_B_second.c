@@ -1,16 +1,14 @@
 #include"02_A_Plus_B_second.h"
 
-int main(void) {
-	int A = 0, B = 0;
-	while (1) {
-		while (scanf("%d %d", &A, &B) != EOF) {
-			if (0<A && A<10) {
-				if (0<B&&B<10) {
-					break;
-				}
-			}
+int main(){
+	int A, B;
+	while (scanf("%d %d", &A, &B) != EOF)
+	{
+		if (0 < A < 10 && 0 < B < 10){
+			printf("%d\n", A+B);
 		}
-		printf("%d \n", A+B);
+		else
+			break;
 	}
 	return 0;
 }
