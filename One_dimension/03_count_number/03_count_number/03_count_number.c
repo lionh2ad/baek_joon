@@ -21,12 +21,11 @@ int input_multi_number() {
 	int A = 0, B = 0, C = 0;
 	int multi_number = 0;
 	while (1) {
-		scanf("%d %d %d", &A, &B, &C); {
-			if (100 <= A && A < 1000) {
-				if (100 <= B && B < 1000) {
-					if (100 <= C && C < 1000) {
-						break;
-					}
+		scanf("%d %d %d", &A, &B, &C);
+		if (100 <= A && A < 1000) {
+			if (100 <= B && B < 1000) {
+				if (100 <= C && C < 1000) {
+					break;
 				}
 			}
 		}
@@ -66,7 +65,7 @@ int* count_number_of_digits(int multi_number, int digits) {
 		multi_number = multi_number - divide_number * divide;
 		for (count_multi_number = 0; count_multi_number < 10; count_multi_number++) {
 			if (count_multi_number == divide_number) {
-				count_number[divide_number] = count_number[divide_number]++;
+				count_number[divide_number]++;
 			}
 		}
 	}
