@@ -14,6 +14,7 @@ void run() {
 	for (count_multinumber = 0; count_multinumber < 10; count_multinumber++) {
 		printf("%d\n", count_number[count_multinumber]);
 	}
+	free(count_number);
 }
 
 int input_multi_number() {
@@ -50,7 +51,7 @@ int number_of_digits(int multi_number) {
 }
 
 int* count_number_of_digits(int multi_number, int digits) {
-	int* count_number = (int*)malloc(sizeof(int*) * 10);
+	int* count_number = (int*)malloc(sizeof(int) * 10);
 	int divide = 1, divide_number = 0, count_digits = 0, count_divide = 0;
 	int count_multi_number = 0;
 	for (int i = 0; i < 10; i++) {
